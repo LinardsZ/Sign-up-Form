@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <title>Sign-up Form</title>
@@ -17,32 +20,47 @@
   </div>
   <div class="main-container">
     <section class="text">
-      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+      <p>Sign up <em>now</em> to get started.</p>
       <p>You <em>know</em> you want to.</p>
     </section>
     <form id="form" class="sign-up" action="">
       <p>Let's do this!</p>
       
-      <label for="name">First name</label>
-      <input type="text" id="name" name="name">
+      <div class="wrapper">
+        <label for="name">First name</label>
+        <input type="text" id="name" name="name">
+      </div>
 
-      <label for="surname">Last name</label>
-      <input type="text" id="surname" name="surname">
+      <div class="wrapper">
+        <label for="surname">Last name</label>
+        <input type="text" id="surname" name="surname">
+      </div>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email">
+      <div class="wrapper">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </div>
 
-      <label for="phone">Phone number</label>
-      <input type="text" id="phone" name="phone">
+      <div class="wrapper">
+        <label for="phone">Phone number</label>
+        <input type="text" id="phone" name="phone">
+      </div>
 
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password">
+      <div class="wrapper pass">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+      </div>
 
-      <label for="confirm-password">Confirm password</label>
-      <input type="password" id="confirm-password" name="confirm-password">
+      <div class="wrapper">
+        <label for="confirm-password">Confirm password</label>
+        <input type="password" id="confirm-password" name="confirm-password">
+      </div>
     </form>
-    <button type="submit" form="form">Create Account</button>
-    <p>Already have an account? <a>Log in</a></p>
+    <div class="bottom">
+      <button id="submit" type="submit" form="form">Create Account</button>
+      <p>Already have an account? <a>Log in</a></p>
+    </div>
   </div>
 </body>
 </html>
